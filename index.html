@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crazy Year Bingo Board</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Crazy Year Bingo Board</h1>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crazy Year Bingo Board</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <h1>Crazy Year Bingo Board</h1>
+
+  <div id="bingo-form">
     <h2>Generate your bingo board</h2>
     <p>Fill out the form below, then press the "Generate" button to get your own Crazy Year Bingo Board</p>
     <form>
-        <label>Year</label>
-        <input type="number" value="" placeholder="Year" min="2024">
-
-
-        <button type="submit">Generate Bingo Card</button>
+      <input type="number" value="" placeholder="Year" min="2024">
+      <textarea placeholder="Enter 6 crazy situations separated by commas"></textarea>
+      <button id="generate-button" type="submit">Let's goooo!!!</button>
     </form>
+  </div>
 
-    <div>Bingo Card Generates Here.</div>
-    <script src="script.js"></script>
-  </body>
+  <div id="generated-bingo">Bingo Card Generates Here.</div>
+  <script src="script.js"></script>
+</body>
+
 </html>
