@@ -6,27 +6,51 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    flex-wrap: wrap;
     font-size: 1.3rem;
-    align-self: center;
     margin: 10px;
     padding: 10px;
-    width: 100%;
+    align-items: center;
 }
 
-input, textarea {
-    width: 100%;
+input {
     padding: 10px;
-    font-size: 1rem;
-    margin: 15px;
+    margin: 10px;
     border-radius: 5px;
-    border: none;
+    border: 1px solid lightblue;
+    font-size: 1.3rem;
+}
+
+h1 {
+    align-self: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    margin: 10px;
+}
+
+@media (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 button {
@@ -51,31 +75,37 @@ h1 {
 
 #bingo-form {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    width: 50%;
-    align-self: center;
+    padding: 50px;
+    align-items: center;
 }
 
-@media (max-width: 50em) {
-    #bingo-form {
-        width: 80%;
-        margin: 20px;
-        padding: 0 60px;
+@media screen and (max-width: 800px) {
+    form {
+        width: 100%;
     }
-  }
-  
+    
+}
 
-#generated-bingo {
+#bingo-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     margin: 10px;
-    width: 50%;
-    min-height: 300px;
-    min-width: 300px;
+    padding: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: center;
     border: 2px solid lightblue;
     border-radius: 5px;
+    margin: 5px;
+    font-size: 1.3rem;
+    color: white;
 }

@@ -19,15 +19,29 @@
 
   <div id="bingo-form">
     <h2>Generate your bingo board</h2>
-    <p>Fill out the form below, then press the "Generate" button to get your own Crazy Year Bingo Board</p>
+    <p>Fill out the form below to get your own Crazy Bingo Board</p>
     <form>
-      <input type="number" value="" placeholder="Year" min="2024">
-      <textarea placeholder="Enter 6 crazy situations separated by commas"></textarea>
+      <label for="year">Year:</label>
+      <input type="number" id="year" name="year" required min="2024">
+    
+      <label for="items">9 Bingo Items:</label>
+      <div class="grid-container">
+        <input type="text" id="item1" name="item1" required minlength="2">
+        <input type="text" id="item2" name="item2" required minlength="2">
+        <input type="text" id="item3" name="item3" required minlength="2">
+        <input type="text" id="item4" name="item4" required minlength="2">
+        <input type="text" id="item5" name="item5" required minlength="2">
+        <input type="text" id="item6" name="item6" required minlength="2">
+        <input type="text" id="item7" name="item7" required minlength="2">
+        <input type="text" id="item8" name="item8" required minlength="2">
+        <input type="text" id="item9" name="item9" required minlength="2">
+      </div>
+    
       <button id="generate-button" type="submit">Let's goooo!!!</button>
     </form>
   </div>
 
-  <div id="generated-bingo">Bingo Card Generates Here.</div>
+  <div id="bingo-board">Bingo Card Generates Here.</div>
   <script src="script.js"></script>
 </body>
 
