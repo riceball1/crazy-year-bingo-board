@@ -33,6 +33,15 @@ h1 {
     align-self: center;
 }
 
+.callout {
+    align-self: center;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    color: black;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -98,11 +107,12 @@ h1 {
 }
 
 .cell {
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     border: 2px solid lightblue;
     border-radius: 5px;
     margin: 5px;
