@@ -96,6 +96,10 @@ h1 {
     
 }
 
+#board-container {
+    margin-bottom: 200px;
+}
+
 #bingo-board {
     display: flex;
     flex-wrap: wrap;
@@ -129,3 +133,19 @@ h1 {
     background-color: lightblue;
     color: black;
 }
+
+footer {
+    background-color: teal;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    font-size: 0.8rem;
+}
+
+footer a {
+    color: white;
+    font-style: bold;
+    text-decoration: none;
+} 
