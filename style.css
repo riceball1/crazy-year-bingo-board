@@ -119,3 +119,13 @@ h1 {
     font-size: 1.3rem;
     color: white;
 }
+
+.cell:hover {
+    background-color: orange;
+    color: black;
+}
+
+.cell.selected {
+    background-color: lightblue;
+    color: black;
+}
